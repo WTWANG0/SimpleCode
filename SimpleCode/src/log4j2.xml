@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN" monitorInterval="60">
+    <Properties>
+        <Property name="server_id">30004</Property>
+        <Property name="log_home_dir">./logs</Property>
+        <Property name="log_bi_dir">/data/emc_data_log/sync_log/</Property>
+        <Property name="normal_log_pattern">[%d{yyyy-MM-dd HH:mm:ss.SSS}][%-5p][%t][%c.%M:%L] %msg%n</Property>
+        <Property name="special_log_pattern">%msg%n</Property>
+        <Property name="max_single_file_size">50MB</Property>
+        <Property name="max_history">60D</Property>
+    </Properties>
+
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <ThresholdFilter level="INFO" onMatch="ACCEPT" onMismatch="DENY"/>
+            <PatternLayout pattern="${normal_log_pattern}"/>
+        </Console>
+
+        <RollingFile name="All" fileName="${log_home_dir}/all.log"
+                     filePattern="${log_home_dir}/all_%d{yyyy_MM_dd}_%i.log">
+            <ThresholdFilter level="INFO" onMatch="ACCEPT" onMismatch="DENY"/>
+            <PatternLayout pattern="${normal_log_pattern}"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy/>
+                <SizeBasedTriggeringPolicy size="${max_single_file_size}"/>
+            </Policies>
+            <DefaultRolloverStrategy fileIndex="nomax">
+                <Delete basePath="${log_home_dir}" maxDepth="2">
+                    <IfFileName glob="*.log">
+                        <IfLastModified age="${max_history}">
+
+                        </IfLastModified>
+                    </IfFileName>
+                </Delete>
+            </DefaultRolloverStrategy>
+        </RollingFile>
+
+        <RollingFile name="Error" fileName="${log_home_dir}/error.log"
+                     filePattern="${log_home_dir}/error_%d{yyyy_MM_dd}_%i.log">
+            <ThresholdFilter level="ERROR" onMatch="ACCEPT" onMismatch="DENY"/>
+            <PatternLayout pattern="${normal_log_pattern}"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy/>
+                <SizeBasedTriggeringPolicy size="${max_single_file_size}"/>
+            </Policies>
+            <DefaultRolloverStrategy fileIndex="nomax">
+                <Delete basePath="${log_home_dir}" maxDepth="2">
+                    <IfFileName glob="*.log">
+                        <IfLastModified age="${max_history}">
+
+                        </IfLastModified>
+                    </IfFileName>
+                </Delete>
+            </DefaultRolloverStrategy>
+        </RollingFile>
+
+        <RollingFile name="Bi" fileName="${log_bi_dir}/all.log"
+                     filePattern="${log_bi_dir}/nid-${server_id}-%d{yyyy-MM-dd-HH}.log">
+            <ThresholdFilter level="INFO" onMatch="ACCEPT" onMismatch="DENY"/>
+            <PatternLayout pattern="${special_log_pattern}"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy/>
+                <SizeBasedTriggeringPolicy size="${max_single_file_size}"/>
+            </Policies>
+            <DefaultRolloverStrategy fileIndex="nomax">
+                <Delete basePath="${log_bi_dir}" maxDepth="2">
+                    <IfFileName glob="*.log">
+                        <IfLastModified age="${max_history}">
+
+                        </IfLastModified>
+                    </IfFileName>
+                </Delete>
+            </DefaultRolloverStrategy>
+        </RollingFile>
+
+    </Appenders>
+
+    <Loggers>
+        <Asynclogger name="game" additivity="false" level="INFO" includeLocation="true">
+            <AppenderRef ref="All" />
+            <AppenderRef ref="Console" />
+            <AppenderRef ref="Error" />
+        </Asynclogger>
+
+        <Asynclogger name="bi" additivity="false" level="INFO" includeLocation="true">
+            <AppenderRef ref="Bi" />
+        </Asynclogger>
+
+        <AsyncRoot level="INFO" includeLocation="true">
+            <AppenderRef ref="All"/>
+            <AppenderRef ref="Console"/>
+        </AsyncRoot>
+
+    </Loggers>
+</Configuration>
