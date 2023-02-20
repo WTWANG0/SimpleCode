@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="17-分支限界算法" />
+        <module name="_16回溯算法" />
+        <module name="_12串的模式匹配" />
+        <module name="14-分治算法" />
+        <module name="08-倒排索引" />
+        <module name="10-图" />
+        <module name="16-回溯算法" />
+        <module name="15-动态规划算法" />
+        <module name="03-哈希表" />
+        <module name="_14分治算法" />
+        <module name="02-链表" />
+        <module name="06-红黑树" />
+        <module name="18-贪心算法" />
+        <module name="_03哈希表" />
+        <module name="_04BST树" />
+        <module name="12-串的模式匹配" />
+        <module name="01-数组" />
+        <module name="_02链表" />
+        <module name="_01数组" />
+        <module name="_10图" />
+        <module name="_09哈夫曼编码" />
+        <module name="_11排序算法" />
+        <module name="07-跳跃表SkipList" />
+        <module name="_15动态规划算法" />
+        <module name="_06红黑树" />
+        <module name="_13Trie字典树" />
+        <module name="11-排序算法" />
+        <module name="04-BST树" />
+        <module name="05-AVL树" />
+        <module name="09-哈夫曼编码" />
+        <module name="13-Trie字典树" />
+        <module name="_05AVL树" />
+        <module name="_07跳跃表SkipList" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="08-倒排索引" target="1.8" />
+      <module name="eeeee" target="1.8" />
+      <module name="uuu" target="1.8" />
+      <module name="uuuu" target="1.8" />
+      <module name="uuuuu" target="1.7" />
+      <module name="uuuuuu" target="1.7" />
+      <module name="线性表" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

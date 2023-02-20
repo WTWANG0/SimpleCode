@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$APPLICATION_HOME_DIR$/jbr/bin/src/main/java" charset="UTF-8" />
+    <file url="file://$APPLICATION_HOME_DIR$/jbr/bin/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/01-数组" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/01-数组/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/02-链表" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/02-链表/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/03-哈希表" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/03-哈希表/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/04-BST树" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/04-BST树/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/05-AVL树" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/05-AVL树/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/06-红黑树" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/06-红黑树/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/07-跳跃表SkipList" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/07-跳跃表SkipList/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/08-倒排索引" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/08-倒排索引/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/09-哈夫曼编码" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/09-哈夫曼编码/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/10-图" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/10-图/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/11-排序算法" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/11-排序算法/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/12-串的模式匹配" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/12-串的模式匹配/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/13-Trie字典树" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/13-Trie字典树/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/14-分治算法" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/14-分治算法/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/15-动态规划算法" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/15-动态规划算法/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/16-回溯算法" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/16-回溯算法/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/17-分支限界算法" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/17-分支限界算法/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/18-贪心算法" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/18-贪心算法/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eeeee" charset="UTF-8" />
+  </component>
+</project>

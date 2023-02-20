@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.fixbug</groupId>
+    <artifactId>Java视频课程数据结构和算法</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>01-数组</module>
+        <module>02-链表</module>
+        <module>03-哈希表</module>
+        <module>04-BST树</module>
+        <module>05-AVL树</module>
+        <module>06-红黑树</module>
+        <module>07-跳跃表SkipList</module>
+        <module>08-倒排索引</module>
+        <module>08-倒排索引</module>
+        <module>09-哈夫曼编码</module>
+        <module>10-图</module>
+        <module>11-排序算法</module>
+        <module>12-串的模式匹配</module>
+        <module>13-Trie字典树</module>
+        <module>14-分治算法</module>
+        <module>15-动态规划算法</module>
+        <module>16-回溯算法</module>
+        <module>17-分支限界算法</module>
+        <module>18-贪心算法</module>
+    </modules>
+
+
+</project>
